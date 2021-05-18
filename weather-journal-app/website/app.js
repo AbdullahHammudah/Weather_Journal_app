@@ -24,7 +24,7 @@ if(zipCode){
             date:newDate,
             user_data:feelings,
         })
-        ).then(()=>updateUI())
+        ).then(()=>updateUI()).catch(()=>{alert("Ummm, Sorry that dosen't look like a valid zip code !")
     }catch(error){
         console.log('error',error);
     }}else{
